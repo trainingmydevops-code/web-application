@@ -5,7 +5,7 @@
 	<groupId>com.mt</groupId>
 	<artifactId>maven-web-application</artifactId>
 	<packaging>war</packaging>
-	<version>19.5.6</version>
+	<version>19.0.0</version>
 	
 	<name>maven-web-application</name>
 
@@ -21,9 +21,9 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://15.206.100.59:9000/</sonar.host.url>
+		<sonar.host.url>http://65.0.205.248:9000/</sonar.host.url>
 		<sonar.login>admin</sonar.login>
-		<sonar.password>admin1</sonar.password> 
+		<sonar.password>Admin@123456</sonar.password> 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
@@ -97,20 +97,19 @@
 	
 	    <repository>
 	      <id>nexus</id>
-	      <name>Aqib Releases Nexus Repository</name>
-	      <url>http://13.127.227.173:8081/repository/aqib-release/</url>
+	      <name>amazon_release_repo</name>
+	      <url>http://13.235.0.54:8081/repository/amazon_release_repo/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Aqib Snapshot Nexus Repository </name>
-	      <url>http://13.127.227.173:8081/repository/aqib-snapshot/</url>
+	      <name>amazon_snapshot_release</name>
+	      <url>http://13.235.0.54:8081/repository/amazon_snapshot_release/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
 	
 	<build>
-		<finalName>maven-web-application</finalName>
 		
 		<plugins>
 			<plugin>
